@@ -39,6 +39,9 @@ def search():
         robin_talk('Playing '+command)
         print('Playing '+command)
         pywhatkit.playonyt('Playing'+command)
+    elif 'are you' in command:
+        robin_talk("I'm good...what about you?")
+        print()
     elif 'time' in command:
         currTime = datetime.datetime.now().strftime('%I:%M %p')
         robin_talk('Current Time is'+currTime)
